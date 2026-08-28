@@ -1,7 +1,13 @@
 import axios from 'axios';
 
+// Determine API baseURL (uses VITE_API_URL for production or defaults to /api proxy for local dev)
+const rawBaseUrl = import.meta.env.VITE_API_URL;
+const baseURL = rawBaseUrl
+  ? (rawBaseUrl.endsWith('/api') ? rawBaseUrl : `${rawBaseUrl.replace(/\/$/, '')}/api`)
+  : '/api';
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL,
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json',
