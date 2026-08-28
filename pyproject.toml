@@ -1,0 +1,3 @@
+[tool.vercel]
+framework = "fastapi"
+entrypoint = "backend/app/main.py:app"
