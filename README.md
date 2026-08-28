@@ -96,6 +96,21 @@ Frontend application will be live at: **`http://localhost:5173`**
 
 ---
 
+## 🌐 Deploy to Vercel (Frontend)
+
+You can deploy the frontend directly to **Vercel** with 1 click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/import?s=https://github.com/Boobesh245/-AI-Powered-Complaint-Issue-Management-System)
+
+### Deployment Steps:
+1. Click the **Deploy with Vercel** button above or import your repository on [vercel.com](https://vercel.com).
+2. Set **Root Directory** to `frontend`.
+3. In **Environment Variables**, set:
+   - `VITE_API_URL`: `https://your-backend-api.onrender.com` (Your deployed backend API URL).
+4. Click **Deploy**.
+
+---
+
 ## 🔑 Default Demo Accounts
 
 The login page includes **1-Click Demo Login Buttons** for testing all roles:
